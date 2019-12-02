@@ -2,6 +2,8 @@ package reflect;
 
 public class Person {
 
+    public static String ID = "001";
+
     private String name;
     protected String address;
     private int age;
@@ -36,6 +38,7 @@ public class Person {
     @Override
     public String toString() {
         return "Person{" +
+                "ID='" + ID + '\'' +
                 "name='" + name + '\'' +
                 ", address='" + address + '\'' +
                 ", age=" + age +
@@ -49,6 +52,10 @@ public class Person {
 
     protected void fun2(){
         System.out.println("调用了受保护的无参方法fun2()");
+    }
+
+    public static void fun3(){
+        System.out.println("调用了公共的无参静态方法fun3()");
     }
 
     public void setAge(int age){

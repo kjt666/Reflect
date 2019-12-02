@@ -4,12 +4,12 @@ public class ClassReflect {
 
     public static void main(String args[]) {
 
-        //第一种获取Class对象方法
+        //通过实例获取Class对象方法
         Person person = new Person();
         Class personClass = person.getClass();
         System.out.println(personClass.getName());
 
-        //第二种获取Class对象方法
+        //通过类获取Class对象方法
         Class personClass2 = Person.class;
         System.out.println(personClass2.getName());
 

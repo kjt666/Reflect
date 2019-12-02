@@ -46,5 +46,11 @@ public class MethodReflect {
         //通过invoke执行getName方法并获取返回值
         Object returnVal = method.invoke(obj);
         System.out.println(returnVal);
+
+        //获取Person无参静态方法fun3()
+        System.out.println("===============获取Person无参静态方法fun3===============");
+        method = clazz.getMethod("fun3");
+        System.out.println(method);
+        method.invoke(null);
     }
 }

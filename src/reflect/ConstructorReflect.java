@@ -1,11 +1,10 @@
 package reflect;
 
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 
 public class ConstructorReflect {
 
-    public static void main(String args[]) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+    public static void main(String args[]) throws Exception {
 
         //获取Person的Class类对象
         Class clazz = Class.forName("reflect.Person");

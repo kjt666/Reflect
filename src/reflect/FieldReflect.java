@@ -41,5 +41,12 @@ public class FieldReflect {
         //为name赋值
         field.set(obj,"张三");
         System.out.println(obj.toString());
+
+        //获取Person类的静态成员属性ID
+        System.out.println("============获取Person类的静态成员属性ID============");
+        field = clazz.getField("ID");
+        System.out.println(field);
+        field.set(null,"002");
+        System.out.println(obj.toString());
     }
 }
